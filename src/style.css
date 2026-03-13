@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ametista: #cda582;
+  --font-display: 'Syne', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+/* #9b59b6 */
+
+.day-available {
+  position: relative;
+}
+
+.day-available::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #cda582; /* #7c3aed Roxo (Tailwind: violet-600) */
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
