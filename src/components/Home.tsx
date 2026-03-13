@@ -9,12 +9,12 @@ export default function Home() {
     >
       <div className="relative flex flex-1 items-center justify-center">
         <img
-          src="/public/modelo.png"
+          src="/modelo.png"
           alt="modelo"
           className="relative z-9 w-sm h-full xl:top-5 "
         />
         <img
-          src="/public/borrao.svg"
+          src="/borrao.svg"
           alt="borrao"
           className="absolute top-25 left-30 z-0"
         />

@@ -14,11 +14,7 @@ export default function About() {
         </p>
         <div className="pt-5 flex flex-col sm:grid sm:grid-cols-2 gap-5">
           <span className="flex items-start gap-5 sm:w-64 xl:w-full">
-            <img
-              src="/public/tesoura.svg"
-              alt="pente e tesoura"
-              className="pt-2"
-            />
+            <img src="/tesoura.svg" alt="pente e tesoura" className="pt-2" />
             <div className="flex flex-col gap-1">
               <h3 className="text-lg font-bold">Equipamentos</h3>
               <p className="">
@@ -28,7 +24,7 @@ export default function About() {
             </div>
           </span>
           <span className="flex items-start gap-5 sm:w-64 xl:w-full">
-            <img src="/public/produtos.svg" alt="produtos" className="pt-2" />
+            <img src="/produtos.svg" alt="produtos" className="pt-2" />
             <div className="flex flex-col gap-1">
               <h3 className="text-lg font-bold">Hidratação</h3>
               <p className="">
@@ -37,22 +33,14 @@ export default function About() {
             </div>
           </span>
           <span className="flex items-start gap-5 sm:w-64 xl:w-full">
-            <img
-              src="/public/corte.svg"
-              alt="corte de cabelo"
-              className="pt-2"
-            />
+            <img src="/corte.svg" alt="corte de cabelo" className="pt-2" />
             <div className="flex flex-col gap-1">
               <h3 className="text-lg font-bold">Corte</h3>
               <p className="">Corte de cabelo masculino e feminino</p>
             </div>
           </span>
           <span className="flex items-start gap-5 sm:w-64 xl:w-full">
-            <img
-              src="/public/limpeza.svg"
-              alt="pente e tesoura"
-              className="pt-2"
-            />
+            <img src="/limpeza.svg" alt="pente e tesoura" className="pt-2" />
             <div className="flex flex-col gap-1">
               <h3 className="text-lg font-bold">Limpeza</h3>
               <p className="">Serviços de limpeza de cabelo, pele e unhas</p>
@@ -60,7 +48,7 @@ export default function About() {
           </span>
         </div>
       </div>
-      <div className="bg-[url('/public/salon1.svg')] bg-cover bg-top w-full xl:w-1/2"></div>
+      <div className="bg-[url('/salon1.svg')] bg-cover bg-top w-full xl:w-1/2"></div>
     </div>
   )
 }

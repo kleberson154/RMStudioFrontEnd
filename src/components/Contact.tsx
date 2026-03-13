@@ -89,7 +89,7 @@ export default function Contact() {
           rel="noreferrer"
           className="flex items-center gap-3 text-white bg-ametista w-max py-2 px-4 rounded-3xl font-inter"
         >
-          <img src="/src/assets/whatsapp.svg" alt="WhatsApp" className="w-5" />
+          <img src="/whatsapp.svg" alt="WhatsApp" className="w-5" />
           (34) 99633-4454
         </a>
         <a

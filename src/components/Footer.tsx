@@ -23,7 +23,7 @@ export default function Footer() {
     <>
       <div className="bg-black text-white flex flex-col xl:justify-between  gap-10 sm:flex-row sm:gap-20 px-6 xl:px-48 py-10">
         <div className="flex flex-col gap-5 md:w-1/3">
-          <img src="/public/logoRmStudio.png" alt="logo" />
+          <img src="/logoRmStudio.png" alt="logo" />
           <p>
             No RM Studio, cada atendimento é pensado para valorizar seu estilo,
             com profissionais qualificados, cuidado em cada detalhe e resultados
@@ -65,11 +65,7 @@ export default function Footer() {
               rel="noreferrer"
               className="flex gap-2 font-inter text-sm"
             >
-              <img
-                src="/src/assets/whatsapp.svg"
-                alt="WhatsApp"
-                className="w-5"
-              />
+              <img src="/whatsapp.svg" alt="WhatsApp" className="w-5" />
               (34) 99633-4454
             </a>
             <a

@@ -37,11 +37,7 @@ export default function Header() {
             rel="noreferrer"
             className="flex items-center gap-3 font-inter text-sm"
           >
-            <img
-              src="/src/assets/whatsapp.svg"
-              alt="WhatsApp"
-              className="w-5 "
-            />
+            <img src="/whatsapp.svg" alt="WhatsApp" className="w-5 " />
             (34) 99633-4454
           </a>
         </div>
@@ -70,7 +66,7 @@ export default function Header() {
       {/* DIV BOTTOM INICIO*/}
       <div className="flex justify-between px-6 xl:px-48 py-2 uppercase sm:h-auto">
         <img
-          src="/public/logoRmStudio.png"
+          src="/logoRmStudio.png"
           alt="logo"
           className="w-1/2 sm:w-1/4 md:w-1/5 lg:w-1/6"
         />
