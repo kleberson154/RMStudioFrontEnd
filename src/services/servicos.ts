@@ -9,6 +9,31 @@ export type Servico = {
   ativo: boolean
 }
 
+function getApiErrorMessage(error: unknown): string {
+  if (error && typeof error === 'object' && 'response' in error) {
+    const axiosError = error as {
+      response?: { status?: number; data?: { error?: string } }
+    }
+
+    const status = axiosError.response?.status
+    const backendMessage = axiosError.response?.data?.error
+
+    if (backendMessage) {
+      return backendMessage
+    }
+
+    if (typeof status === 'number' && status >= 500) {
+      return 'Servico temporariamente indisponivel. Tente novamente em instantes.'
+    }
+  }
+
+  if (error instanceof Error && error.message) {
+    return error.message
+  }
+
+  return 'Nao foi possivel carregar os servicos.'
+}
+
 function toHourBlocks(value: unknown): number {
   const numericValue = Number(value)
 
@@ -94,8 +119,13 @@ function normalizeServico(item: unknown): Servico {
 }
 
 export async function listarServicos(): Promise<Servico[]> {
-  const response = await api.get('/servicos')
-  return getListFromResponse(response.data)
-    .map(normalizeServico)
-    .filter(servico => servico.id && servico.nome && servico.ativo)
+  try {
+    const response = await api.get('/servicos')
+
+    return getListFromResponse(response.data)
+      .map(normalizeServico)
+      .filter(servico => servico.id && servico.nome && servico.ativo)
+  } catch (error) {
+    throw new Error(getApiErrorMessage(error))
+  }
 }
